@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Grocery_Store/app/src/main/res/drawable/button_shape.xml" value="0.149" />
+        <entry key="..\:/Grocery_Store/app/src/main/res/drawable/category_item.xml" value="0.149" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/activity_home_view.xml" value="0.23333333333333334" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/activity_main.xml" value="0.23425925925925925" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/activity_spalash_screen.xml" value="0.23333333333333334" />
+        <entry key="..\:/Grocery_Store/app/src/main/res/layout/category_item.xml" value="0.25" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/fragment_category.xml" value="0.2359375" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/fragment_home_.xml" value="0.23333333333333334" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/fragment_shopping__cart.xml" value="0.2359375" />

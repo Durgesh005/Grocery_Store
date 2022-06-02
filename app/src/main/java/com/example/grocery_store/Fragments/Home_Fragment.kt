@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.grocery_store.R
 import com.example.grocery_store.databinding.FragmentHomeBinding
+import org.imaginativeworld.whynotimagecarousel.model.CarouselItem
 
 
 class Home_Fragment : Fragment() {
@@ -16,9 +17,30 @@ class Home_Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view = inflater.inflate(R.layout.fragment_home_, container, false)
+        binding = FragmentHomeBinding.inflate(layoutInflater)
+        binding.carousel.registerLifecycle(lifecycle)
 
-        return view
+        val list = mutableListOf<CarouselItem>()
+
+
+
+        list.add(
+            CarouselItem(
+                imageDrawable = R.drawable.gift4
+            )
+        )
+
+
+        list.add(
+            CarouselItem(
+                imageDrawable = R.drawable.gift4
+            )
+        )
+
+        binding.carousel.setData(list)
+
+
+        return binding.root
     }
 
 

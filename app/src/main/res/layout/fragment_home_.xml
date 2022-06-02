@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".Fragments.Home_Fragment">
 
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Home"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="50dp" />
+        android:layout_height="wrap_content">
+
+
+        <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+            android:id="@+id/carousel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:autoPlay="true"
+            app:autoPlayDelay="3000"
+            app:infiniteCarousel="true"
+            app:showNavigationButtons="false" />
+
+
+    </RelativeLayout>
 
 
 </RelativeLayout>
