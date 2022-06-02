@@ -13,7 +13,7 @@ class Home_View : AppCompatActivity() {
         binding = ActivityHomeViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.carousel.registerLifecycle(lifecycle)
+    /*    binding.carousel.registerLifecycle(lifecycle)*/
 
         val list = mutableListOf<CarouselItem>()
 
@@ -33,6 +33,8 @@ class Home_View : AppCompatActivity() {
             )
         )
 
+/*
         binding.carousel.setData(list)
+*/
     }
 }

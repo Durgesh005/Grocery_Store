@@ -18,7 +18,7 @@ class Home_Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomeBinding.inflate(layoutInflater)
-        binding.carousel.registerLifecycle(lifecycle)
+        /*binding.carousel.registerLifecycle(lifecycle)*/
 
         val list = mutableListOf<CarouselItem>()
 
@@ -37,7 +37,7 @@ class Home_Fragment : Fragment() {
             )
         )
 
-        binding.carousel.setData(list)
+       /* binding.carousel.setData(list)*/
 
 
         return binding.root

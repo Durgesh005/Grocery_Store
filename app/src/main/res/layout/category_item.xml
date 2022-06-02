@@ -9,34 +9,30 @@
         android:layout_height="wrap_content">
 
         <RelativeLayout
+            android:id="@+id/r2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/product_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="2dp">
-
-                <ImageView
-                    android:id="@+id/icon_btn"
-                    android:layout_width="90dp"
-                    android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/image6" />
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white">
 
 
-            </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/icon_btn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image6" />
+
 
             <TextView
                 android:id="@+id/product_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/product_btn"
-                android:layout_margin="5dp"
-                android:text="Tide Extra\n Power" />
+                android:layout_below="@+id/icon_btn"
+                android:layout_marginStart="5dp"
+                android:text="Tide Extra\nPower"
+                android:textColor="@color/black" />
         </RelativeLayout>
 
     </RelativeLayout>

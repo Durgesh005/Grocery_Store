@@ -18,14 +18,7 @@ class Splash_Screen : AppCompatActivity() {
         binding = ActivitySpalashScreenBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_spalash_screen)
 
-
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN
-        )
-
-        // HERE WE ARE TAKING THE REFERENCE OF OUR IMAGE
-        // SO THAT WE CAN PERFORM ANIMATION USING THAT IMAGE
+        
         val backgroundImage: ImageView = findViewById(R.id.SplashScreenImage)
         val slideAnimation = AnimationUtils.loadAnimation(this, R.anim.side_slide)
         backgroundImage.startAnimation(slideAnimation)

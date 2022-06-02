@@ -18,36 +18,27 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         loadFragment(Home_Fragment())
+        val firstFragment = Home_Fragment()
+        val secondFragment = Category()
+        val thirdFragment = Shopping_Cart()
+        val forthFragment = User()
 
-        binding.bottomNavigationView.setOnNavigationItemReselectedListener {
+        binding.bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.home -> {
-                    loadFragment(Home_Fragment())
-                    true
-                }
-                R.id.category -> {
-                    loadFragment(Category())
-                    true
-                }
-                R.id.cart -> {
-                    loadFragment(Shopping_Cart())
-                    true
-                }
-                R.id.user -> {
-                    loadFragment(User())
-                    true
-                }
+                R.id.daily -> loadFragment(firstFragment)
+                R.id.store -> loadFragment(secondFragment)
+                R.id.cart -> loadFragment(thirdFragment)
+                R.id.orders -> loadFragment(forthFragment)
 
-                else -> false
             }
+            true
         }
     }
 
     private fun loadFragment(fragment: Fragment) {
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.view_pager, fragment)
-        transaction.addToBackStack(null)
-        transaction.commit()
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.view_pager, fragment)
+            commit()
+        }
     }
-
 }
