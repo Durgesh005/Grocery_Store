@@ -32,8 +32,8 @@ class Category_Adapter(
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var photos = itemView.findViewById<ImageView>(R.id.icon_btn)
-        var product = itemView.findViewById<TextView>(R.id.product_txt)
+        var photos = itemView.findViewById<ImageView>(R.id.product_img)
+        var product = itemView.findViewById<TextView>(R.id.product_name)
     }
 }
 

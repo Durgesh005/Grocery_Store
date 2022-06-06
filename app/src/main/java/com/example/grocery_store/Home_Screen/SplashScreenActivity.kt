@@ -10,7 +10,7 @@ import android.widget.ImageView
 import com.example.grocery_store.R
 import com.example.grocery_store.databinding.ActivitySpalashScreenBinding
 
-class Splash_Screen : AppCompatActivity() {
+class SplashScreenActivity : AppCompatActivity() {
 
     lateinit var binding: ActivitySpalashScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {

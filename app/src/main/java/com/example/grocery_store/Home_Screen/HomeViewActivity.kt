@@ -6,7 +6,7 @@ import com.example.grocery_store.R
 import com.example.grocery_store.databinding.ActivityHomeViewBinding
 import org.imaginativeworld.whynotimagecarousel.model.CarouselItem
 
-class Home_View : AppCompatActivity() {
+class HomeViewActivity : AppCompatActivity() {
     lateinit var binding: ActivityHomeViewBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

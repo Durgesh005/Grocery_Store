@@ -12,7 +12,7 @@ import com.example.grocery_store.R
 import com.example.grocery_store.databinding.FragmentCategoryBinding
 
 
-class Category : Fragment() {
+class CategoryFragment : Fragment() {
 
     lateinit var binding: FragmentCategoryBinding
 
@@ -54,7 +54,7 @@ class Category : Fragment() {
 
     fun setupRecyclerView() {
         var adapter = Category_Adapter(activity, data, images)
-        var layoutManager = GridLayoutManager(activity, 4)
+        var layoutManager = LinearLayoutManager(activity)
         binding.rvView.layoutManager = layoutManager
         binding.rvView.adapter = adapter
 

@@ -8,15 +8,14 @@ import android.view.ViewGroup
 import com.example.grocery_store.R
 
 
-class User : Fragment() {
-
+class ShoppingCartFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user, container, false)
+
+        return inflater.inflate(R.layout.fragment_shopping__cart, container, false)
     }
 
 

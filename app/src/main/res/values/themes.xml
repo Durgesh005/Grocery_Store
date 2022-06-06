@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Grocery_Store" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#43A047</item>
+        <item name="colorPrimary">#018353</item>
         <item name="colorPrimaryVariant">#018353</item>
         <item name="colorOnPrimary">#018353</item>
         <!-- Secondary brand color. -->

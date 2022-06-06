@@ -14,7 +14,7 @@
         <RelativeLayout
             android:id="@+id/top_1"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="@dimen/_140sdp"
             android:background="#018353">
 
             <RelativeLayout
@@ -189,6 +189,53 @@
 
 
         </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/top_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view">
+
+            <EditText
+                android:id="@+id/order_id_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Order ID " />
+
+            <EditText
+                android:id="@+id/product_name_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_id_edt"
+                android:hint="Product Name" />
+
+            <EditText
+                android:id="@+id/price_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_name_edt"
+                android:hint="Price" />
+
+            <Button
+                android:id="@+id/add_cart_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price_edt"
+                android:layout_centerHorizontal="true"
+                android:text="ADD"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/product_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_4"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
 
 
     </RelativeLayout>

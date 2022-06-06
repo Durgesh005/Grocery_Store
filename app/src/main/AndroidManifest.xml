@@ -17,7 +17,7 @@
         android:theme="@style/Theme.Grocery_Store"
         tools:targetApi="31">
         <activity
-            android:name=".Home_Screen.Splash_Screen"
+            android:name=".Home_Screen.SplashScreenActivity"
             android:exported="true">
 
             <intent-filter>
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Home_Screen.Home_View"
+            android:name=".Home_Screen.HomeViewActivity"
             android:exported="true" />
         <activity
             android:name=".Home_Screen.MainActivity"

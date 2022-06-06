@@ -3,10 +3,10 @@ package com.example.grocery_store.Home_Screen
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.grocery_store.Fragments.Category
-import com.example.grocery_store.Fragments.Home_Fragment
-import com.example.grocery_store.Fragments.Shopping_Cart
-import com.example.grocery_store.Fragments.User
+import com.example.grocery_store.Fragments.CategoryFragment
+import com.example.grocery_store.Fragments.HomeFragment
+import com.example.grocery_store.Fragments.ShoppingCartFragment
+import com.example.grocery_store.Fragments.UserFragment
 import com.example.grocery_store.R
 import com.example.grocery_store.databinding.ActivityMainBinding
 
@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        loadFragment(Home_Fragment())
-        val firstFragment = Home_Fragment()
-        val secondFragment = Category()
-        val thirdFragment = Shopping_Cart()
-        val forthFragment = User()
+        loadFragment(HomeFragment())
+        val firstFragment = HomeFragment()
+        val secondFragment = CategoryFragment()
+        val thirdFragment = ShoppingCartFragment()
+        val forthFragment = UserFragment()
 
         binding.bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
