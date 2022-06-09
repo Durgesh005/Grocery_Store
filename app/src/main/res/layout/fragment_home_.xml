@@ -14,7 +14,7 @@
         <RelativeLayout
             android:id="@+id/top_1"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_140sdp"
+            android:layout_height="@dimen/_150sdp"
             android:background="#018353">
 
             <RelativeLayout
@@ -191,10 +191,49 @@
         </androidx.cardview.widget.CardView>
 
         <RelativeLayout
+            android:id="@+id/text_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view"
+            android:layout_margin="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/CategoryTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Fruit's And Vegetables"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/SubTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CategoryTxt"
+                android:layout_marginLeft="10dp"
+                android:text="Eat Fresh,Stay Healthy"
+                android:textColor="#817D7D"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/product_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_7"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <RelativeLayout
             android:id="@+id/top_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_view">
+            android:layout_below="@id/product_view"
+            android:visibility="gone">
 
             <EditText
                 android:id="@+id/order_id_edt"
@@ -227,18 +266,9 @@
 
         </RelativeLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/product_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/top_4"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp" />
-
 
     </RelativeLayout>
+
 
 
 </RelativeLayout>

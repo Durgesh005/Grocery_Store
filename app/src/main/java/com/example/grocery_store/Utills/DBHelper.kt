@@ -13,7 +13,7 @@ class DBHelper(context: Context?) :
     SQLiteOpenHelper(context, "GROCERY.db", null, 1) {
     override fun onCreate(p0: SQLiteDatabase?) {
         var query =
-            "CREATE TABLE Grocery (id INTEGER PRIMARY KEY AUTOINCREMENT, ProductName TEXT,Price INTEGER)";
+            "CREATE TABLE Grocery (id INTEGER PRIMARY KEY AUTOINCREMENT,OrderID  INTEGER,ProductName TEXT,Price INTEGER)";
         p0!!.execSQL(query)
     }
 
@@ -24,9 +24,12 @@ class DBHelper(context: Context?) :
     fun insertData(id1: String, name1: String, price1: String) {
         var db = writableDatabase
         var cv = ContentValues()
-        cv.put("id", id1)
+        cv.put("OrderID", id1)
         cv.put("ProductName", name1)
         cv.put("Price", price1)
+
+        var ret = db.insert("Grocery", null, cv)
+        println(ret)
     }
 
     @SuppressLint("Range")
@@ -38,7 +41,7 @@ class DBHelper(context: Context?) :
 
         if (cursor.moveToFirst()) {
             do {
-                var id = cursor.getString(cursor.getColumnIndex("id"))
+                var id = cursor.getString(cursor.getColumnIndex("OrderID"))
                 var name = cursor.getString(cursor.getColumnIndex("ProductName"))
                 var price = cursor.getString(cursor.getColumnIndex("Price"))
 

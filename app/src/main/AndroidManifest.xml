@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Home_Screen.HomeViewActivity"
+            android:name=".Home_Screen.ViewCartActivity"
             android:exported="true" />
         <activity
             android:name=".Home_Screen.MainActivity"

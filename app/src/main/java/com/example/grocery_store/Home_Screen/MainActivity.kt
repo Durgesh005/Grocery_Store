@@ -10,6 +10,7 @@ import com.example.grocery_store.Fragments.UserFragment
 import com.example.grocery_store.R
 import com.example.grocery_store.databinding.ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {

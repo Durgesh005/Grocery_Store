@@ -18,7 +18,8 @@ class Category_Adapter(
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view = LayoutInflater.from(factivity).inflate(R.layout.category_item, parent, false)
+        var view =
+            LayoutInflater.from(factivity).inflate(R.layout.product_show_items, parent, false)
         return ViewHolder(view)
     }
 
@@ -32,8 +33,8 @@ class Category_Adapter(
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var photos = itemView.findViewById<ImageView>(R.id.product_img)
-        var product = itemView.findViewById<TextView>(R.id.product_name)
+        var photos = itemView.findViewById<ImageView>(R.id.images_btn)
+        var product = itemView.findViewById<TextView>(R.id.item_name)
     }
 }
 

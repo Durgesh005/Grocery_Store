@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rv_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/top_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_round_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/review_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="8dp"
+                android:text="   Review Items"
+                android:textColor="#000000"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/xpress_mart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/review_item"
+                android:layout_marginLeft="30dp"
+                android:text="    Xpress Mart"
+                android:textColor="#000000"
+                android:textSize="@dimen/_9sdp" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/top_2"
+            app:cardBackgroundColor="#F1EDFC">
+
+            <RelativeLayout
+                android:id="@+id/mid_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+
+                <TextView
+                    android:id="@+id/text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="$28 Saved On This Order"
+                    android:textColor="#33176F"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_1"
+                    android:text="You Have Free Delivery"
+                    android:textColor="#33176F"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_rv_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view"
+            android:layout_gravity="center" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

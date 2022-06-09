@@ -17,26 +17,26 @@ class CategoryFragment : Fragment() {
     lateinit var binding: FragmentCategoryBinding
 
     var data = arrayOf(
-        "Vegetables",
-        "Dairy",
-        "Munchies",
-        "Cold Drinks",
-        "Breakfast",
-        "Tea & Coffee",
-        "Bakery",
-        "Sweet Tooth"
+        "Safeda Mango",
+        "Banana",
+        "Onion",
+        "Cucumber",
+        "Beetroot",
+        "Apple",
+        "Potato",
+        "Ginger"
 
 
     )
     var images = arrayOf(
-        R.drawable.tide,
-        R.drawable.product1,
-        R.drawable.product1,
-        R.drawable.product1,
-        R.drawable.product1,
-        R.drawable.product1,
-        R.drawable.product1,
-        R.drawable.product1,
+        R.drawable.vege,
+        R.drawable.apple,
+        R.drawable.amulp,
+        R.drawable.amulp,
+        R.drawable.amulp,
+        R.drawable.amulp,
+        R.drawable.amulp,
+        R.drawable.amulp,
 
 
         )
@@ -54,7 +54,7 @@ class CategoryFragment : Fragment() {
 
     fun setupRecyclerView() {
         var adapter = Category_Adapter(activity, data, images)
-        var layoutManager = LinearLayoutManager(activity)
+        var layoutManager = GridLayoutManager(activity,2)
         binding.rvView.layoutManager = layoutManager
         binding.rvView.adapter = adapter
 
