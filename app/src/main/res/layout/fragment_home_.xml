@@ -3,272 +3,340 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="@dimen/_400sdp"
     android:background="@color/white">
 
-
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
+
 
         <RelativeLayout
-            android:id="@+id/top_1"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_150sdp"
-            android:background="#018353">
+            android:layout_height="match_parent">
+
 
             <RelativeLayout
-                android:id="@+id/top_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="10dp">
-
-                <ImageView
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:layout_alignStart="@+id/home_txt"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="5dp"
-                    android:src="@drawable/ic_baseline_location_on_24" />
-
-                <TextView
-                    android:id="@+id/home_txt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="   Home"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
-
-
-            <TextView
-                android:id="@+id/dash_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/top_2"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:text="Daily Products"
-                android:textColor="@color/white"
-                android:textSize="22dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/text_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/dash_txt"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="5dp"
-                android:text="Groceries Delivered Fresh And Fast"
-                android:textColor="@color/white"
-                android:textSize="12dp" />
-
-            <ImageView
-                android:id="@+id/profile_img"
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:src="@drawable/user1"
-                app:civ_border_color="@color/white"
-                app:civ_border_width="2dp" />
-
-            <TextView
-                android:id="@+id/instant_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/profile_img"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="15dp"
-                android:gravity="center"
-                android:text="INSTANT"
-                android:textColor="#B7ED1F"
-                android:textSize="10dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
-                android:layout_below="@+id/instant_txt"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="65dp"
-                android:src="@drawable/thunderbolt" />
-
-            <TextView
-                android:id="@+id/min_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/instant_txt"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="1dp"
-                android:layout_marginEnd="12dp"
-                android:gravity="center"
-                android:text="15 MIN"
-                android:textColor="#FFFFFF"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/image_card"
+                android:id="@+id/top_1"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-
-
-                android:layout_below="@id/text_2"
-                android:layout_margin="15dp"
-                android:background="#FF0000"
-                app:cardCornerRadius="10dp">
+                android:layout_height="@dimen/_150sdp"
+                android:background="#018353">
 
                 <RelativeLayout
-                    android:id="@+id/top_3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:id="@+id/top_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp">
 
                     <ImageView
-                        android:id="@+id/search_btn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_outline_search_24" />
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignStart="@+id/home_txt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_baseline_location_on_24" />
 
                     <TextView
-                        android:id="@+id/text_3"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/home_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="   Home"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/dash_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top_2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Daily Products"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dash_txt"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Groceries Delivered Fresh And Fast"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/user1"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/instant_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_img"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:text="INSTANT"
+                    android:textColor="#B7ED1F"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/instant_txt"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="65dp"
+                    android:src="@drawable/thunderbolt" />
+
+                <TextView
+                    android:id="@+id/min_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/instant_txt"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="15 MIN"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/image_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/text_2"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/top_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/search_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_outline_search_24" />
+
+                        <TextView
+                            android:id="@+id/text_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignLeft="@id/search_btn"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center"
+                            android:text="Search for any item in Our Family"
+                            android:textColor="#9F9595"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/text_view"
+                android:layout_width="350dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/top_1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#F1EDFC"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/mid_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/text_4"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_alignLeft="@id/search_btn"
-                        android:layout_marginLeft="30dp"
                         android:gravity="center"
-                        android:text="Search for any item in Our Family"
-                        android:textColor="#9F9595"
-                        android:textSize="12dp" />
+                        android:text="FREE Delivery On Your Daily Offers Every Day"
+                        android:textColor="#33176F"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
 
             </androidx.cardview.widget.CardView>
 
-
-        </RelativeLayout>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/text_view"
-            android:layout_width="350dp"
-            android:layout_height="38dp"
-            android:layout_below="@id/top_1"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="20dp"
-            app:cardBackgroundColor="#F1EDFC"
-            app:cardCornerRadius="5dp">
-
             <RelativeLayout
-                android:id="@+id/mid_1"
+                android:id="@+id/text_7"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view"
+                android:layout_margin="@dimen/_5sdp">
 
                 <TextView
-                    android:id="@+id/text_4"
+                    android:id="@+id/CategoryTxt"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="FREE Delivery On Your Daily Offers Every Day"
-                    android:textColor="#33176F"
-                    android:textSize="14dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/ttmid"
+                    android:text="Fruits &amp; Vegetables"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/SubTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CategoryTxt"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/ttmid"
+                    android:text="Eat Fresh, Stay Healthy"
+                    android:textColor="#817D7D"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_7"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/top_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_view"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/order_id_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Order ID " />
+
+                <EditText
+                    android:id="@+id/product_name_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_id_edt"
+                    android:hint="Product Name" />
+
+                <EditText
+                    android:id="@+id/price_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/product_name_edt"
+                    android:hint="Price" />
+
+                <Button
+                    android:id="@+id/add_cart_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/price_edt"
+                    android:layout_centerHorizontal="true"
+                    android:text="ADD"
+                    android:textColor="@color/white" />
+
             </RelativeLayout>
 
 
-        </androidx.cardview.widget.CardView>
-
-        <RelativeLayout
-            android:id="@+id/text_7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/text_view"
-            android:layout_margin="@dimen/_5sdp">
-
-            <TextView
-                android:id="@+id/CategoryTxt"
+            <RelativeLayout
+                android:id="@+id/top_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Fruit's And Vegetables"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_15sdp"
-                android:textStyle="bold" />
+                android:layout_below="@id/product_view">
 
-            <TextView
-                android:id="@+id/SubTxt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/CategoryTxt"
-                android:layout_marginLeft="10dp"
-                android:text="Eat Fresh,Stay Healthy"
-                android:textColor="#817D7D"
-                android:textSize="@dimen/_10sdp" />
+                <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                    android:id="@+id/carousel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:autoPlay="true"
+                    app:autoPlayDelay="3000"
+                    app:infiniteCarousel="true"
+                    app:showBottomShadow="false"
+                    app:showNavigationButtons="false"
+                    app:showTopShadow="false" />
+            </RelativeLayout>
 
-        </RelativeLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/product_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_7"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp" />
-
-        <RelativeLayout
-            android:id="@+id/top_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/product_view"
-            android:visibility="gone">
-
-            <EditText
-                android:id="@+id/order_id_edt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Order ID " />
-
-            <EditText
-                android:id="@+id/product_name_edt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/order_id_edt"
-                android:hint="Product Name" />
-
-            <EditText
-                android:id="@+id/price_edt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/product_name_edt"
-                android:hint="Price" />
-
-            <Button
-                android:id="@+id/add_cart_btn"
+            <RelativeLayout
+                android:id="@+id/text_8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/price_edt"
-                android:layout_centerHorizontal="true"
-                android:text="ADD"
-                android:textColor="@color/white" />
+                android:layout_below="@id/top_5"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_50sdp">
+
+                <TextView
+                    android:id="@+id/CategoryTxt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/ttmid"
+                    android:text="Everyday Buys"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/SubTxt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CategoryTxt2"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/ttmid"
+                    android:text="Daily Essentials on the go"
+                    android:textColor="#817D7D"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product_view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/text_8" />
+
+
+
 
         </RelativeLayout>
-
-
-    </RelativeLayout>
-
-
+    </ScrollView>
 
 </RelativeLayout>
+

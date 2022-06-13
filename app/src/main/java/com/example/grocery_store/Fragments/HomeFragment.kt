@@ -13,33 +13,34 @@ import com.example.grocery_store.Modal_Data.ProductModalData
 import com.example.grocery_store.R
 import com.example.grocery_store.Utills.DBHelper
 import com.example.grocery_store.databinding.FragmentHomeBinding
+import org.imaginativeworld.whynotimagecarousel.model.CarouselItem
 
 
 class HomeFragment : Fragment() {
 
     lateinit var binding: FragmentHomeBinding
     var list1 = ArrayList<ProductModalData>()
+    val list = mutableListOf<CarouselItem>()
     var data = arrayOf(
-        "Safeda Mango",
+        "Mango",
         "Banana",
-        "Onion",
-        "Cucumber",
-        "Beetroot",
         "Apple",
+        "Tomato",
+        "Beetroot",
+        "Onion",
         "Potato",
         "Ginger"
 
-
     )
     var images = arrayOf(
-        R.drawable.vege,
+        R.drawable.mango,
+        R.drawable.banana,
         R.drawable.apple,
-        R.drawable.amulp,
-        R.drawable.amulp,
-        R.drawable.amulp,
-        R.drawable.amulp,
-        R.drawable.amulp,
-        R.drawable.amulp,
+        R.drawable.tomato,
+        R.drawable.beetroot,
+        R.drawable.onion,
+        R.drawable.potato,
+        R.drawable.ginger,
 
 
         )
@@ -57,21 +58,34 @@ class HomeFragment : Fragment() {
 
         binding.addCartBtn.setOnClickListener {
 
-            db.insertData(
-                binding.orderIdEdt.text.toString(),
-                binding.productNameEdt.text.toString(),
-                binding.priceEdt.text.toString(),
-            )
+
             var intent = Intent(activity, ViewCartActivity::class.java)
 
             startActivity(intent)
 
         }
-        list1 = db.readData()
+        /*list1 = db.readData()*/
+
+
+        list.add(
+            CarouselItem(
+                imageDrawable = R.drawable.lays
+            )
+        )
+
+
+        list.add(
+            CarouselItem(
+                imageDrawable = R.drawable.lays2
+            )
+        )
+
+        binding.carousel.setData(list)
 
 
         return binding.root
     }
+
 
     fun setupRecyclerView() {
         var adapter = HomeAdapter(activity, data, images)
@@ -82,9 +96,9 @@ class HomeFragment : Fragment() {
 
         var adapter2 = HomeAdapter(activity, data, images)
         var layoutManager2 = LinearLayoutManager(activity)
-        layoutManager.orientation = LinearLayoutManager.HORIZONTAL
-        binding.productView.layoutManager = layoutManager2
-        binding.productView.adapter = adapter2
+        layoutManager2.orientation = LinearLayoutManager.HORIZONTAL
+        binding.productView2.layoutManager = layoutManager2
+        binding.productView2.adapter = adapter2
 
 
     }

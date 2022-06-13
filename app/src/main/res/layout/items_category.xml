@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/r3_view"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:elevation="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:id="@+id/r1_view"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/rectangle_shape">
+
+
+            <ImageView
+                android:id="@+id/images_btn"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/apple" />
+
+            <!--  <androidx.cardview.widget.CardView
+                  android:layout_width="22dp"
+                  android:layout_height="22dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentBottom="true"
+                  android:layout_margin="@dimen/_1sdp"
+                  android:elevation="@dimen/_20sdp"
+                  app:cardBackgroundColor="#FFFFFF"
+                  app:cardCornerRadius="@dimen/_2sdp">
+
+                  <ImageView
+                      android:layout_width="@dimen/_12sdp"
+                      android:layout_height="@dimen/_12sdp"
+                      android:layout_gravity="center"
+                      android:src="@drawable/ic_baseline_add_24" />
+
+              </androidx.cardview.widget.CardView>-->
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/r2_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r3_view"
+        android:layout_marginBottom="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/ttnorms"
+            android:text="Vegetables \n&amp; Fruits"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -18,8 +18,8 @@ class HomeAdapter(
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view =
-            LayoutInflater.from(activity).inflate(R.layout.allproducts, parent, false)
+
+        val view = LayoutInflater.from(activity).inflate(R.layout.allproducts, parent, false)
         return HomeAdapter.ViewHolder(view)
     }
 
