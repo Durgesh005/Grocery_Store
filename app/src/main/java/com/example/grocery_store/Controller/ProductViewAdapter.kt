@@ -5,17 +5,14 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.grocery_store.Controller.ProductViewAdapter.*
 import com.example.grocery_store.Home_Screen.OrdersDetailsActivity
 import com.example.grocery_store.Home_Screen.ViewCartActivity
 import com.example.grocery_store.Modal_Data.DataBaseModal
-import com.example.grocery_store.Modal_Data.ProductModalData
 import com.example.grocery_store.R
 import com.example.grocery_store.Utills.DBHelper
 import com.google.android.material.bottomsheet.BottomSheetDialog
@@ -51,6 +48,8 @@ class ProductViewAdapter(
             opendialog()
         }
 
+
+
     }
 
     override fun getItemCount(): Int {
@@ -62,7 +61,6 @@ class ProductViewAdapter(
         var photos = itemView.findViewById<ImageView>(R.id.photos_btn)
         var add = itemView.findViewById<CardView>(R.id.data_add_btn)
         var price1 = itemView.findViewById<TextView>(R.id.item_price)
-        var qu = itemView.findViewById<TextView>(R.id.item_weight)
     }
 
 
@@ -80,5 +78,7 @@ class ProductViewAdapter(
         }
 
     }
+
+
 
 }

@@ -74,6 +74,16 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/_10sdp" />
 
+                <ImageView
+                    android:id="@+id/edit_btn"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_below="@id/NameProduct_txt"
+                    android:layout_alignLeft="@+id/Quantity_txt2"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:src="@drawable/edit" />
+
                 <TextView
                     android:id="@+id/text"
                     android:layout_width="wrap_content"

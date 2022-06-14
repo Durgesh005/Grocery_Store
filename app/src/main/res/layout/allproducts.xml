@@ -24,6 +24,7 @@
             android:src="@drawable/apple" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/add_product_btn"
             android:layout_width="22dp"
             android:layout_height="22dp"
             android:layout_alignParentRight="true"
@@ -42,30 +43,30 @@
 
     </RelativeLayout>
 
-<!--    <FrameLayout
-        android:id="@+id/frame_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/r1_view"
-        android:layout_alignTop="@+id/r1_view">
+    <!--    <FrameLayout
+            android:id="@+id/frame_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/r1_view"
+            android:layout_alignTop="@+id/r1_view">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:elevation="@dimen/_20sdp"
-            app:cardBackgroundColor="#43A047"
-            app:cardCornerRadius="@dimen/_2sdp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:elevation="@dimen/_20sdp"
+                app:cardBackgroundColor="#43A047"
+                app:cardCornerRadius="@dimen/_2sdp">
 
-            &lt;!&ndash;   <ImageView
-                   android:layout_width="@dimen/_12sdp"
-                   android:layout_height="@dimen/_12sdp"
-                   android:layout_gravity="center"
-                   android:src="@drawable/ic_baseline_add_24" />&ndash;&gt;
+                &lt;!&ndash;   <ImageView
+                       android:layout_width="@dimen/_12sdp"
+                       android:layout_height="@dimen/_12sdp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/ic_baseline_add_24" />&ndash;&gt;
 
 
 
-        </androidx.cardview.widget.CardView>
-    </FrameLayout>-->
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>-->
 
 
     <RelativeLayout

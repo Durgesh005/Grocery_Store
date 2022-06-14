@@ -36,6 +36,9 @@
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/category_item.xml" value="0.25" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/category_items_view.xml" value="0.25" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/dialog.xml" value="0.24895833333333334" />
+        <entry key="..\:/Grocery_Store/app/src/main/res/layout/dialog2.xml" value="0.25" />
+        <entry key="..\:/Grocery_Store/app/src/main/res/layout/dialog3.xml" value="0.25" />
+        <entry key="..\:/Grocery_Store/app/src/main/res/layout/dialog4.xml" value="0.24895833333333334" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/fragment_category.xml" value="0.2359375" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/fragment_home_.xml" value="0.21666666666666667" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/fragment_shopping__cart.xml" value="0.2359375" />
@@ -44,6 +47,7 @@
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/items_category.xml" value="0.25" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/mycaart.xml" value="0.2" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/product_show_items.xml" value="0.24895833333333334" />
+        <entry key="..\:/Grocery_Store/app/src/main/res/layout/update_dialog.xml" value="0.25" />
         <entry key="..\:/Grocery_Store/app/src/main/res/layout/view_cart.xml" value="0.24895833333333334" />
         <entry key="..\:/Grocery_Store/app/src/main/res/menu/nav_menu.xml" value="0.25" />
       </map>

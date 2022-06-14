@@ -55,9 +55,22 @@ class DBHelper(context: Context?) :
 
     }
 
-    /*  fun deleteData(id: String) {
-          var db = writableDatabase
+    fun updateData(id1: String, i: Int, i1: Int) {
 
-          db.delete("Grocery", "id = $id", null)
-      }*/
+        var db = writableDatabase
+
+        var cv = ContentValues()
+        cv.put("ProductName", id1)
+        cv.put("Quantity", i)
+        cv.put("Price", i1)
+
+
+        /* db.update("Grocery", cv, "id = $id", null)*/
+    }
+
+    fun deleteData(id: String) {
+        var db = writableDatabase
+
+        db.delete("Grocery", "Price = $id", null)
+    }
 }
