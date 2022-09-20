@@ -30,8 +30,6 @@ The idea is to keep the app super simple while demonstrating new libraries and t
   
 </p>
 
-![Screenshot_2022-09-20-17-55-32-50_a3f8f2bc84d97c9fc1e341d82baf5606_google-pixel4xl-justblack-portrait](https://user-images.githubusercontent.com/101611806/191257837-334ab103-be8d-4fef-98df-654de2a09f26.png)
-
 
 
 ## Libraries and tools 🛠
