@@ -16,15 +16,15 @@ You will require latest version of Android Studio 1.0 (or newer) to be able to b
 The idea is to keep the app super simple while demonstrating new libraries and tools which makes it easier to build high quality Android applications.
 
 <p float="center">
-  <img src="https://user-images.githubusercontent.com/101611806/191254635-c6d66300-fdec-49a5-a95a-9d2458814449.png" width=22% height=35%>
+  <img src="https://user-images.githubusercontent.com/101611806/191254635-c6d66300-fdec-49a5-a95a-9d2458814449.png" width=25% height=35%>
 
- <img src="https://user-images.githubusercontent.com/101611806/191254671-f09a5b56-1909-47ef-af78-d02eae56bd24.png" width=22% height=35%>
+ <img src="https://user-images.githubusercontent.com/101611806/191254671-f09a5b56-1909-47ef-af78-d02eae56bd24.png" width=25% height=35%>
   
-<img src="https://user-images.githubusercontent.com/101611806/191254677-5a5a9dc2-90fe-4ab4-b9bc-dfcdb777ca7c.png" width=22% height=35%><br>
+<img src="https://user-images.githubusercontent.com/101611806/191254677-5a5a9dc2-90fe-4ab4-b9bc-dfcdb777ca7c.png" width=25% height=35%>
   
-<img src="https://user-images.githubusercontent.com/101611806/191254685-9c1ed5f6-793c-4e5e-af9c-8a6e3faf82dd.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101611806/191254685-9c1ed5f6-793c-4e5e-af9c-8a6e3faf82dd.png" width=25% height=35%>
   
- <img src="https://user-images.githubusercontent.com/101611806/191254689-dd7fc5a4-1d50-4c65-a993-5a112d65cb14.png" width=22% height=35%>
+ <img src="https://user-images.githubusercontent.com/101611806/191254689-dd7fc5a4-1d50-4c65-a993-5a112d65cb14.png" width=25% height=35%>
   
 </p>
 
