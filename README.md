@@ -1,4 +1,4 @@
-# Grocery Store (Based On mySQL DataBase)
+# Grocery Store (mySQL DataBase)
 Grocery App, is online shopping UI Kit, geniune mobile application to which you can rely on. It guides you to formulate incredible mobile application. 
 
 
