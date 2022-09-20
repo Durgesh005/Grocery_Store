@@ -20,13 +20,18 @@ The idea is to keep the app super simple while demonstrating new libraries and t
 
  <img src="https://user-images.githubusercontent.com/101611806/191254671-f09a5b56-1909-47ef-af78-d02eae56bd24.png" width=25% height=35%>
   
-<img src="https://user-images.githubusercontent.com/101611806/191254677-5a5a9dc2-90fe-4ab4-b9bc-dfcdb777ca7c.png" width=25% height=35%>
-  
+   <img src="https://user-images.githubusercontent.com/101611806/191257837-334ab103-be8d-4fef-98df-654de2a09f26.png" width=25% height=35%>
+
+  <img src="https://user-images.githubusercontent.com/101611806/191254677-5a5a9dc2-90fe-4ab4-b9bc-dfcdb777ca7c.png" width=25% height=35%>
+
 <img src="https://user-images.githubusercontent.com/101611806/191254685-9c1ed5f6-793c-4e5e-af9c-8a6e3faf82dd.png" width=25% height=35%>
   
  <img src="https://user-images.githubusercontent.com/101611806/191254689-dd7fc5a4-1d50-4c65-a993-5a112d65cb14.png" width=25% height=35%>
   
 </p>
+
+![Screenshot_2022-09-20-17-55-32-50_a3f8f2bc84d97c9fc1e341d82baf5606_google-pixel4xl-justblack-portrait](https://user-images.githubusercontent.com/101611806/191257837-334ab103-be8d-4fef-98df-654de2a09f26.png)
+
 
 
 ## Libraries and tools 🛠
