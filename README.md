@@ -40,7 +40,7 @@ The pull request and commit should have a useful title.
 
 ## License
 
-The News API License (API)
+The Grocery Store License (Firebase)
 
 Copyright (c) 2022  Durgesh Mishra
 
